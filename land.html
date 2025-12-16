@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Ravindra S L – Software Engineer specializing in full-stack development and AI-driven systems." />
+  <meta name="keywords" content="Software Engineer, Full Stack Developer, Python, JavaScript, AI, Portfolio" />
+  <meta name="author" content="Ravindra S L" />
+  <title>Ravindra S L | Software Engineer</title>
+
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #1f2937;
+      --muted-text: #6b7280;
+      --accent-color: #2563eb;
+      --border-color: #e5e7eb;
+      --name-gradient: linear-gradient(90deg, #2563eb, #7c3aed);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+
+    .brand-name {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: var(--name-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+      animation: fadeSlideIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: var(--muted-text);
+      max-width: 800px;
+    }
+
+    .hero {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .hero-accent {
+      width: 80px;
+      height: 4px;
+      background: var(--name-gradient);
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      margin: 1.5rem 0 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      border: 1px solid var(--accent-color);
+      margin-right: 1rem;
+      font-weight: 500;
+    }
+
+    .btn.primary {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+
+    .btn.secondary {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background-color: #ffffff;
+    }
+
+    footer {
+      padding: 3rem 0;
+      text-align: center;
+      color: var(--muted-text);
+      border-top: 1px solid var(--border-color);
+    }
+
+        .about-wrapper {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .about-image {
+      flex-shrink: 0;
+    }
+
+    .about-image img {
+      width: 220px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 14px;
+      border: 1px solid var(--border-color);
+      background-color: #f9fafb;
+    }
+
+    .about-text p {
+      max-width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-image img {
+        width: 180px;
+        height: 180px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <nav>
+      <span class="brand-name">Ravindra S L</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-accent"></div>
+      <h1>Software Engineer</h1>
+      <p>
+        I build reliable, scalable software systems with a focus on clean architecture,
+        data-driven solutions, and practical use of modern technologies.
+      </p>
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-wrapper">
+        <div class="about-image">
+          <img src="mypic.jpeg" alt="Ravindra S L" />
+        </div>
+        <div class="about-text">
+          <p>
+            I am a computer science engineering graduate with experience in full-stack
+            development, data analysis, and applied machine learning. I enjoy solving
+            real-world problems through structured thinking, clear code, and continuous learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <p>Python, JavaScript, C, C++, SQL</p>
+        </div>
+        <div class="card">
+          <h3>Frameworks</h3>
+          <p>React, Node.js, Express, Flask</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, Linux, Docker, Tableau</p>
+        </div>
+        <div class="card">
+          <h3>Databases</h3>
+          <p>MySQL, PostgreSQL, MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>
+        Worked on multiple academic and independent software projects involving
+        full-stack development, data processing, and machine learning workflows.
+        Focused on writing maintainable code and building practical, end-to-end solutions.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Deepfake Audio Detection</h3>
+          <p>
+            Built a machine learning system to detect synthetic audio using MFCC
+            features and classification models, with a simple web interface for uploads.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Adaptive Traffic Signal Control</h3>
+          <p>
+            Designed a traffic signal optimization system that adapts timings
+            based on traffic density using data-driven logic.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Sales Prediction Dashboard</h3>
+          <p>
+            Analyzed e-commerce sales data and built interactive dashboards to
+            visualize trends and forecast demand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Interested in working together or discussing opportunities?
+        Reach out via email or connect on LinkedIn and GitHub.
+      </p>
+      <p>
+        <strong>Email:</strong> slindravi@gmail.com<br />
+        <strong>LinkedIn:</strong> https://www.linkedin.com/in/ravindra-s-l-81a5a4301/<br />
+        <strong>GitHub:</strong> https://github.com/rsl-2002
